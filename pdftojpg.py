@@ -17,7 +17,7 @@ while a < count:
     file1.write("C:\\Users\\Admin\\Major_project\\images" + str(a) + ".jpg\n")
     a += 1
 
-images = convert_from_path('C:\\Users\\Admin\\Major_project\\An Analysis of the Performance of Named Entity Recognition.pdf')
+images = convert_from_path('C:\\Users\\Admin\\Major_project\\An Analysis of the Performance of Named Entity Recognition.pdf',poppler_path= r'C:\Users\Admin\Downloads\Release-23.11.0-0\poppler-23.11.0\Library\bin')
 
 for i, image in enumerate(images):
     fname = "image" + str(i) + ".jpg"
