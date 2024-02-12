@@ -22,5 +22,5 @@ images = convert_from_path('C:\\Users\\Admin\\Major_project\\An Analysis of the 
 for i, image in enumerate(images):
     fname = "image" + str(i) + ".jpg"
     image.save(fname, 'JPEG')
-
+print(hello)
 img = np.array(Image.open('image0.jpg'))
