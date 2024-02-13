@@ -4,23 +4,31 @@ from pdf2image import convert_from_path
 import PyPDF2
 from PIL import Image
 import re
+import os
 
-file = open('C:\\Users\\Admin\\Major_project\\An Analysis of the Performance of Named Entity Recognition.pdf', 'rb')
+pdf_path = 'C:\\Users\\Admin\\Major_project\\images\\6th Semester Provisional Result Sheet.pdf'
+output_folder = 'C:\\Users\\Admin\\Major_project\\images'
+
+file = open(pdf_path, 'rb')
 readpdf = PyPDF2.PdfReader(file)
 count = len(readpdf.pages)
 print('Page Count ==>', count)
 
-a = 0
-open('C:\\Users\\Admin\\Major_project\\path.txt', 'w').close()
-while a < count:
-    file1 = open('C:\\Users\\Admin\\Major_project\\path.txt', 'a')
-    file1.write("C:\\Users\\Admin\\Major_project\\images" + str(a) + ".jpg\n")
-    a += 1
+# Ensure the output folder exists
+os.makedirs(output_folder, exist_ok=True)
 
-images = convert_from_path('C:\\Users\\Admin\\Major_project\\An Analysis of the Performance of Named Entity Recognition.pdf',poppler_path= r'C:\Users\Admin\Downloads\Release-23.11.0-0\poppler-23.11.0\Library\bin')
+with open('C:\\Users\\Admin\\Major_project\\path.txt', 'w') as file1:
+    file1.write("\n")  # Add a newline for separation if needed
+    a = 0
+    while a < count:
+        file1.write(output_folder + "\\image" + str(a) + ".jpg\n")
+        a += 1
+
+images = convert_from_path(pdf_path, poppler_path=r'C:\Users\Admin\Downloads\Release-23.11.0-0\poppler-23.11.0\Library\bin')
 
 for i, image in enumerate(images):
-    fname = "image" + str(i) + ".jpg"
+    fname = f"{output_folder}\\image{i}.jpg"
     image.save(fname, 'JPEG')
-print(hello)
-img = np.array(Image.open('image0.jpg'))
+
+img = np.array(Image.open(f"{output_folder}\\image0.jpg"))
+
