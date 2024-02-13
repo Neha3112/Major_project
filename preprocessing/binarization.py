@@ -3,7 +3,7 @@ from PIL import Image
 import os
 
 folder_path = 'C:\\Users\\Neha\\Documents\\Major_project\\images'  # Replace this with the path to your folder
-output_folder = 'C:\\Users\\Neha\\Documents\\Major_project\\grayimage'
+output_folder = 'C:\\Users\\Neha\\Documents\\Major_project\\preprocessing\\grayimage'
 
 # List all files in the folder
 image_files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
