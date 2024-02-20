@@ -1,4 +1,13 @@
-C:\Users\Neha\Documents\Major_project\images0.jpg
-C:\Users\Neha\Documents\Major_project\images1.jpg
-C:\Users\Neha\Documents\Major_project\images2.jpg
-C:\Users\Neha\Documents\Major_project\images3.jpg
+
+C:\Users\Admin\Major_project\images\image0.jpg
+C:\Users\Admin\Major_project\images\image1.jpg
+C:\Users\Admin\Major_project\images\image2.jpg
+C:\Users\Admin\Major_project\images\image3.jpg
+C:\Users\Admin\Major_project\images\image4.jpg
+C:\Users\Admin\Major_project\images\image5.jpg
+C:\Users\Admin\Major_project\images\image6.jpg
+C:\Users\Admin\Major_project\images\image7.jpg
+C:\Users\Admin\Major_project\images\image8.jpg
+C:\Users\Admin\Major_project\images\image9.jpg
+C:\Users\Admin\Major_project\images\image10.jpg
+C:\Users\Admin\Major_project\images\image11.jpg
