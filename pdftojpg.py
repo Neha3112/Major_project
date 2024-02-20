@@ -6,7 +6,7 @@ from PIL import Image
 import re
 import os
 
-pdf_path = 'C:\\Users\\Admin\\Major_project\\images\\6th Semester Provisional Result Sheet.pdf'
+pdf_path = 'C:\\Users\\Admin\\Major_project\\6th Semester Provisional Result Sheet.pdf'
 output_folder = 'C:\\Users\\Admin\\Major_project\\images'
 
 file = open(pdf_path, 'rb')
